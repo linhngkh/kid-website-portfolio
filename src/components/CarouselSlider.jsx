@@ -1,80 +1,63 @@
 import React from "react";
-import { Container, Box } from "@mui/material";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import { Container, Box, Button, Paper } from "@mui/material";
+// import Swiper JS
+import { Swiper, SwiperSlide } from "swiper/react";
+// import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
+// import index css
+import "../index.css";
+// import images from assets
+import slider_image_1 from "../assets/banner/banner-2.jpeg";
+import slider_image_2 from "../assets/banner/banner-1.jpeg";
 
 const CarouselSlider = () => {
   return (
-    <Container maxWidth="lg">
-      <Carousel
-        additionalTransfrom={0}
-        arrows
-        autoPlaySpeed={3000}
-        beforeChange={function (nextSlide, _ref2) {
-          var currentSlide = _ref2.currentSlide;
-          _ref2.onMove;
-          return (
-            "previous slide is " + currentSlide + " nextSlide is " + nextSlide
-          );
+    <Container
+      sx={{
+        padding: "2rem 1rem",
+        margin: "0 auto",
+      }}
+    >
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
         }}
-        centerMode={false}
-        className=""
-        containerClass="container"
-        dotListClass=""
-        draggable
-        focusOnSelect={false}
-        infinite
-        itemClass=""
-        keyBoardControl
-        minimumTouchDrag={80}
-        pauseOnHover
-        renderArrowsWhenDisabled={false}
-        renderButtonGroupOutside={false}
-        renderDotsOutside={false}
-        responsive={{
-          desktop: {
-            breakpoint: {
-              max: 3000,
-              min: 1024,
-            },
-            items: 1,
-          },
-          mobile: {
-            breakpoint: {
-              max: 464,
-              min: 0,
-            },
-            items: 1,
-          },
-          tablet: {
-            breakpoint: {
-              max: 1024,
-              min: 464,
-            },
-            items: 1,
-          },
+        pagination={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          clickable: true,
         }}
-        rewind={false}
-        rewindWithAnimation={false}
-        rtl={false}
-        shouldResetAutoplay
-        showDots
-        sliderClass=""
-        slidesToSlide={1}
-        swipeable
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
       >
-        <Box
-          sx={{
-            width: "300px",
-            height: "300px",
-            objectFit: "contain",
-          }}
-        >
-          <img src="/src/assets/3G1A1424.jpeg" />
-          <img src="/src/assets/3G1A1426.jpeg" />
-          <img src="/src/assets/B51F8D43-DDED-4F45-AE0D-4D06211CD3DA.jpeg" />
-        </Box>
-      </Carousel>
+        {/* all image sliders  */}
+        <SwiperSlide>
+          <img src={slider_image_1} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slider_image_2} alt="slide_image" />
+        </SwiperSlide>
+        {/* slide controll with next and prev button */}
+        <div className="slider-controller">
+          <div className="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <div className="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div className="swiper-pagination"></div>
+        </div>
+      </Swiper>
     </Container>
   );
 };
