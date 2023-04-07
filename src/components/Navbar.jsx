@@ -5,23 +5,18 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import { Link } from "react-router-dom";
 
-const barItems = ["HomePage", "Contact", "Blog"];
-const sideBars = ["Profile", "Contact", "Blog"];
+const sideBars = ["Profile", "Images", "Contact", "Blog"];
 
 function Navbar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
@@ -56,43 +51,7 @@ function Navbar() {
             XUKA
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="logo"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {barItems.map((item) => (
-                <MenuItem key={item} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{item}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-
+          {/* title shows when screen is mobile size */}
           <Typography
             variant="h5"
             noWrap
@@ -118,7 +77,12 @@ function Navbar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {sidebar}
+                <Link
+                  style={{ textDecoration: "none", color: "white" }}
+                  to={`/${sidebar}`}
+                >
+                  {sidebar}
+                </Link>
               </Button>
             ))}
           </Box>
@@ -147,7 +111,9 @@ function Navbar() {
             >
               {sideBars.map((sidebar) => (
                 <MenuItem key={sidebar} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{sidebar}</Typography>
+                  <Link style={{ textDecoration: "none" }} to={`/${sidebar}`}>
+                    {sidebar}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
