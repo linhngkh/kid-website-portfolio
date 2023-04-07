@@ -15,6 +15,7 @@ export default function SimpleContainer() {
           alignItems: "center",
           justifyContent: "space-between",
           bgcolor: "#cfe8fc",
+          
         }}
       >
         <Box

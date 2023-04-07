@@ -14,7 +14,9 @@ const Contact = () => {
         <Box
           sx={{
             bgcolor: "#fcfacf",
-            height: "80vh",
+            border: "3px black solid",
+            borderRadius: "20px",
+            height: "70vh",
             width: "100%",
             display: "flex",
             alignItems: "center",
@@ -37,8 +39,20 @@ const Contact = () => {
               }}
             />
           </Box>
-          <Box sx={{ maxWidth: 345, width: "100%" }}>
-            <CardContent>
+          <Box
+            sx={{
+              maxWidth: 345,
+              width: "100%",
+              height: "500px",
+              background: "white",
+              borderRadius: "10px",
+              display: "flex",
+              alignItems: "center",
+              textAlign: "center",
+              justifyContent: "center",
+            }}
+          >
+            <CardContent sx={{}}>
               <Typography gutterBottom variant="h5" component="div">
                 Lien lac voi Xuka nhe!
               </Typography>
