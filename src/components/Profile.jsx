@@ -15,24 +15,21 @@ export default function SimpleContainer() {
           alignItems: "center",
           justifyContent: "space-between",
           bgcolor: "#cfe8fc",
-          
         }}
       >
         <Box
           sx={{
-            background: "red",
-            height: "400px",
-            width: "50%",
+            maxWidth: "100%",
+            maxHeight: "100%",
           }}
         >
-          <Typography padding={3}>toi la xuka xin chao cac ban!</Typography>
+          <Typography padding={3}>Xin chào các bạn! Mình tên là Xuka Thuỳ An. Ngoài việc học trên lớp, mình còn có sở thích và đam mê là vẽ, nhảy, múa, ca hát, và làm người mẫu ảnh. Cảm ơn các bạn luôn theo dõi và yêu mến mình nhé! </Typography>
         </Box>
 
         <Box
           sx={{
-            height: "400px",
-            width: "50%",
-            maxWidth: 300,
+            maxWidth: "100%",
+            maxHeight: "100%",
           }}
         >
           <video controls width="300" autoPlay loop muted>

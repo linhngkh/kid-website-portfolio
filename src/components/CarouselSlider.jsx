@@ -15,6 +15,8 @@ import "../index.css";
 // import images from assets
 import slider_image_1 from "../assets/banner/banner-2.jpeg";
 import slider_image_2 from "../assets/banner/banner-1.jpeg";
+import slider_image_3 from "../assets/banner/banner-3.jpg";
+import slider_image_4 from "../assets/banner/banner-4.jpg";
 
 const CarouselSlider = () => {
   return (
@@ -46,6 +48,12 @@ const CarouselSlider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={slider_image_2} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slider_image_3} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={slider_image_4} alt="slide_image" />
         </SwiperSlide>
         {/* slide controll with next and prev button */}
         <div className="slider-controller">
