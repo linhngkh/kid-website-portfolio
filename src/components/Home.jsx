@@ -8,7 +8,6 @@ const Home = () => {
     <div>
       <CarouselSlider />
       <Profile />
-
       <Contact />
       <LogoSlider />
     </div>
