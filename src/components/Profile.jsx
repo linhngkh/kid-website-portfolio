@@ -39,7 +39,7 @@ export default function SimpleContainer() {
           <video controls width="300" autoPlay loop muted>
             {" "}
             <source
-              src="../assets/video/xuka-shortvideo.mp4"
+              src="/src/assets/video/xuka-shortvideo.mp4"
               type="video/mp4"
             />
           </video>
