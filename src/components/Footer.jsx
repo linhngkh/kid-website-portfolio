@@ -23,17 +23,26 @@ const Footer = () => {
           height: "15vh",
         }}
       >
-        <Typography variant="h6"> Booking Contact: Mẹ Trần Như Hoa </Typography>
-        <Typography variant="body2">
-          {" "}
-          <SmartphoneIcon /> 0978 702552
-          <Divider />
-          <Link href="https://www.facebook.com/hoa.an.9003">
+        <Box sx={{}}>
+          <Typography variant="h6">
+            {" "}
+            Booking Contact: Mẹ Trần Như Hoa{" "}
+          </Typography>
+          <Typography variant="body2">
+            {" "}
+            <SmartphoneIcon /> 0978 702552{" "}
+          </Typography>
+        </Box>
+        <Box sx={{ display: "flex" }}>
+          <Link
+            href="https://www.facebook.com/hoa.an.9003"
+            sx={{ textDecoration: "none" }}
+          >
             {" "}
             <FacebookIcon />
             Hoa Su Kien
           </Link>{" "}
-        </Typography>
+        </Box>
       </Box>
       <Typography variant="body2">
         &#169; {thisYear} Linh Nguyen - Write code with love!
