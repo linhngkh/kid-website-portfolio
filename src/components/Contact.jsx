@@ -4,9 +4,10 @@ import Container from "@mui/material/Container";
 import CardMedia from "@mui/material/CardMedia";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import { FormControl, FormLabel } from "@mui/material";
+import { FormControl } from "@mui/material";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import Textarea from "@mui/joy/Textarea";
 const Contact = () => {
   return (
     <React.Fragment>
@@ -14,7 +15,6 @@ const Contact = () => {
         <Box
           sx={{
             bgcolor: "#fcfacf",
-            border: "3px black solid",
             borderRadius: "20px",
             height: "70vh",
             width: "100%",
@@ -57,12 +57,15 @@ const Contact = () => {
                 Lien lac voi Xuka nhe!
               </Typography>
               <FormControl>
-                <FormLabel>Ho va ten</FormLabel>
-                <TextField required />
-                <FormLabel>dia chi email</FormLabel>
-                <TextField required />
-                <Button variant="contained" sx={{ marginTop: "10px" }}>
-                  gui
+                <TextField required placeholder="Họ và tên" />
+                <TextField
+                  required
+                  placeholder="Địa chỉ email"
+                  sx={{ mt: "10px" }}
+                />
+                <Textarea placeholder="Viết tin nhắn cho Xuka..." sx={{ mt: "10px" }} />
+                <Button variant="contained" sx={{ mt: "10px" }}>
+                  Gửi
                 </Button>
               </FormControl>
             </CardContent>
