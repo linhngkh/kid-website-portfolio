@@ -15,7 +15,7 @@ const Footer = () => {
         alignItems: "center",
         flexDirection: "column",
         justifyContent: "space-between",
-        padding: "20px 40px",
+        padding: "10px",
         bgcolor: "#d2fccf",
       }}
     >
@@ -27,12 +27,16 @@ const Footer = () => {
       >
         {/* Nhu Hoa info */}
         <Box sx={{ width: "50%", mr: "100px", margin: "20px" }}>
-          <Typography
-            variant="h6"
-            sx={{ lineHeight: "1.5", fontWeight: "bold" }}
-          >
+          <Typography variant="h6" sx={{ lineHeight: "1.5" }}>
             {" "}
-            Booking Contact: Mẹ Trần Như Hoa{" "}
+            <mark
+              style={{
+                background:
+                  "linear-gradient(180deg, transparent 60%, rgb(255, 253, 160) 60%)",
+              }}
+            >
+              Booking Contact: Mẹ Trần Như Hoa
+            </mark>
           </Typography>
           <Typography variant="body2">
             {" "}
@@ -49,7 +53,16 @@ const Footer = () => {
         </Box>
         {/* xuka info */}
         <Box sx={{ width: "60%", ml: "100px", margin: "20px" }}>
-          <Typography variant="h6">Xuka's Social Media</Typography>
+          <Typography variant="h6">
+            <mark
+              style={{
+                background:
+                  "linear-gradient(180deg, transparent 60%, rgb(255, 253, 160) 60%)",
+              }}
+            >
+              Xuka's Social Media
+            </mark>
+          </Typography>
           <Link href="https://www.facebook.com/hoatran.event">
             {" "}
             <FacebookIcon sx={{ verticalAlign: "middle", color: "black" }} />
@@ -65,7 +78,7 @@ const Footer = () => {
         </Box>
       </Box>
       <Box sx={{ position: "sticky" }}>
-        <Typography variant="body2">
+        <Typography variant="body2" sx={{ fontWeight: "bold" }}>
           &#169; {thisYear} Linh Nguyen - Write code with love!
           <Link
             href="https://github.com/linhngkh/xuka-thuyan"

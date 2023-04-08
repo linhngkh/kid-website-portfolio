@@ -25,19 +25,29 @@ export default function SimpleContainer() {
             maxHeight: "100%",
           }}
         >
-          <Typography padding={3}>
-            Xin chào các bạn! Mình tên là Xuka Thuỳ An. Ngoài việc học trên lớp,
+          <Typography variant="h5">
+            <mark
+              style={{
+                background:
+                  "linear-gradient(180deg, transparent 60%, rgb(255, 253, 160) 60%)",
+              }}
+            >
+              Giới thiệu về bản thân
+            </mark>{" "}
+          </Typography>
+          <Typography padding={2} variant="body1">
+            Xin chào các bạn!
+            <br />
+            Mình tên là <strong> Xuka Thuỳ An</strong>. Ngoài việc học trên lớp,
             mình còn có sở thích và đam mê là vẽ, nhảy, múa, ca hát, và làm
-            người mẫu ảnh. Cảm ơn các bạn luôn theo dõi và yêu mến mình nhé!{" "}
+            người mẫu ảnh. Mẹ mình luôn là người đồng hành, cổ vũ mình tham gia
+            các sự kiện văn hoá và nghệ thuật, cũng từ đó mình làm quen được với
+            rất nhiều bạn nhỏ khác có cùng sở thích đó. Cảm ơn các bạn luôn theo
+            dõi và yêu mến mình nhé!{" "}
           </Typography>
         </Box>
 
-        <Box
-          sx={{
-            maxWidth: "100%",
-            maxHeight: "100%",
-          }}
-        >
+        <Box sx={{ display: "flex" }}>
           <video controls width="300" autoPlay loop muted>
             {" "}
             <source src={Video} type="video/mp4" />
