@@ -23,7 +23,11 @@ export default function SimpleContainer() {
             maxHeight: "100%",
           }}
         >
-          <Typography padding={3}>Xin chào các bạn! Mình tên là Xuka Thuỳ An. Ngoài việc học trên lớp, mình còn có sở thích và đam mê là vẽ, nhảy, múa, ca hát, và làm người mẫu ảnh. Cảm ơn các bạn luôn theo dõi và yêu mến mình nhé! </Typography>
+          <Typography padding={3}>
+            Xin chào các bạn! Mình tên là Xuka Thuỳ An. Ngoài việc học trên lớp,
+            mình còn có sở thích và đam mê là vẽ, nhảy, múa, ca hát, và làm
+            người mẫu ảnh. Cảm ơn các bạn luôn theo dõi và yêu mến mình nhé!{" "}
+          </Typography>
         </Box>
 
         <Box
@@ -35,7 +39,7 @@ export default function SimpleContainer() {
           <video controls width="300" autoPlay loop muted>
             {" "}
             <source
-              src="/src/assets/video/xuka-shortvideo.mp4"
+              src="../assets/video/xuka-shortvideo.mp4"
               type="video/mp4"
             />
           </video>
