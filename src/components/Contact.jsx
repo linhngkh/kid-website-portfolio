@@ -18,7 +18,6 @@ const Contact = () => {
         <Box
           sx={{
             bgcolor: "#fcfacf",
-            borderRadius: "20px",
             height: "70vh",
             width: "100%",
             display: "flex",
@@ -69,6 +68,7 @@ const Contact = () => {
                 <Textarea
                   placeholder="Viết tin nhắn cho Xuka..."
                   sx={{ mt: "10px" }}
+                  minRows={3}
                 />
                 <Button variant="contained" sx={{ mt: "10px" }}>
                   Gửi

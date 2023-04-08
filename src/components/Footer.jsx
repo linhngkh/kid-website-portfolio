@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Typography } from "@mui/material";
+import { Link, Typography, Box } from "@mui/material";
 import Container from "@mui/material/Container";
 import GitHubIcon from "@mui/icons-material/GitHub";
 const Footer = () => {
@@ -7,14 +7,18 @@ const Footer = () => {
   return (
     <Container
       maxWidth="lg"
-      style={{
+      sx={{
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",
-        width: "100%",
-        padding: "40px",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        padding: "20px 40px",
+        bgcolor: "#d2fccf",
       }}
     >
+      <Box sx={{ width: "200px" }}>
+        <Typography variant="h5"> Booking Contact</Typography>
+      </Box>
       <Typography variant="body1">
         &#169; {thisYear} Linh Nguyen - Write code with love!
         <Link
