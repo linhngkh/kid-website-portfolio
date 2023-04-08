@@ -8,6 +8,9 @@ import { FormControl } from "@mui/material";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Textarea from "@mui/joy/Textarea";
+
+import Image from "../assets/IMG_0991.jpeg";
+
 const Contact = () => {
   return (
     <React.Fragment>
@@ -32,7 +35,7 @@ const Contact = () => {
             <CardMedia
               component="img"
               height="500"
-              image="/src/assets/IMG_0346.jpeg"
+              image={Image}
               alt="xuka"
               sx={{
                 borderRadius: "10px",
@@ -63,7 +66,10 @@ const Contact = () => {
                   placeholder="Địa chỉ email"
                   sx={{ mt: "10px" }}
                 />
-                <Textarea placeholder="Viết tin nhắn cho Xuka..." sx={{ mt: "10px" }} />
+                <Textarea
+                  placeholder="Viết tin nhắn cho Xuka..."
+                  sx={{ mt: "10px" }}
+                />
                 <Button variant="contained" sx={{ mt: "10px" }}>
                   Gửi
                 </Button>

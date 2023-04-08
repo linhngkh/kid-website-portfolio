@@ -12,6 +12,8 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 
+import avatarXuka from "../assets/IMG_1906.jpeg";
+
 const sideBars = ["Profile", "Images", "Blog"];
 
 function Navbar() {
@@ -91,7 +93,7 @@ function Navbar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open sidebar">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="xuka" src="../assets/IMG_1906.jpeg" />
+                <Avatar alt="xuka" src={avatarXuka} />
               </IconButton>
             </Tooltip>
             <Menu

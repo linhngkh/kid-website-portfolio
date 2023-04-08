@@ -4,6 +4,8 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { Typography } from "@mui/material";
 
+import Video from "../assets/video/xuka-shortvideo.mp4";
+
 export default function SimpleContainer() {
   return (
     <React.Fragment>
@@ -38,10 +40,7 @@ export default function SimpleContainer() {
         >
           <video controls width="300" autoPlay loop muted>
             {" "}
-            <source
-              src="/src/assets/video/xuka-shortvideo.mp4"
-              type="video/mp4"
-            />
+            <source src={Video} type="video/mp4" />
           </video>
         </Box>
       </Container>
