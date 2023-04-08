@@ -57,7 +57,7 @@ const Contact = () => {
           >
             <CardContent sx={{}}>
               <Typography gutterBottom variant="h5" component="div">
-                Lien lac voi Xuka nhe!
+                Liên lạc với Xuka nhé!
               </Typography>
               <FormControl>
                 <TextField required placeholder="Họ và tên" />
