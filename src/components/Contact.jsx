@@ -37,7 +37,8 @@ const Contact = () => {
               image={Image}
               alt="xuka"
               sx={{
-                borderRadius: "10px",
+                borderRadius: "12px",
+                boxShadow: 5,
               }}
             />
           </Box>
@@ -47,16 +48,17 @@ const Contact = () => {
               width: "100%",
               height: "500px",
               background: "white",
-              borderRadius: "10px",
+              borderRadius: "12px",
               display: "flex",
               alignItems: "center",
               textAlign: "center",
               justifyContent: "center",
+              boxShadow: 3,
             }}
           >
             <CardContent sx={{}}>
               <Typography gutterBottom variant="h5" component="div">
-               Kết Nối với Xuka nhé!
+                Kết Nối với Xuka nhé!
               </Typography>
               <FormControl>
                 <TextField required placeholder="Họ và tên" />
