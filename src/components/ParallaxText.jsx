@@ -68,7 +68,9 @@ export default function ParallaxText() {
   return (
     <section style={{ fontFamily: "Plaster" }}>
       <ParallaxTexts baseVelocity={-5}>XUKA THUYAN</ParallaxTexts>
-      <ParallaxTexts baseVelocity={5}>DANCER MODEL KID</ParallaxTexts>
+      <ParallaxTexts baseVelocity={5}>
+        DANCER MODEL KID MUSIC SING DRAWING
+      </ParallaxTexts>
     </section>
   );
 }

@@ -9,9 +9,9 @@ const Home = () => {
     <div>
       <CarouselSlider />
       <Profile />
+      <ParallaxText />
       <Contact />
       <LogoSlider />
-      <ParallaxText />
     </div>
   );
 };

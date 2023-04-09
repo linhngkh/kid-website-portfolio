@@ -14,7 +14,7 @@ import Image from "../assets/IMG_0991.jpeg";
 const Contact = () => {
   return (
     <React.Fragment>
-      <Container maxWidth="lg" sx={{ padding: "60px" }}>
+      <Container maxWidth="lg" sx={{ paddingBottom: "60px" }}>
         <Box
           sx={{
             bgcolor: "#fcfacf",
