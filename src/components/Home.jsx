@@ -16,13 +16,13 @@ const Home = () => {
         <ParallaxLayer offset={0.8} speed={1.5} factor={1}>
           <Profile />
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={1}>
+        <ParallaxLayer offset={1} speed={1.5}>
           <ParallaxText />
         </ParallaxLayer>
         <ParallaxLayer offset={1.2} speed={0.5} factor={1}>
           <Contact />
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={0.5}>
+        <ParallaxLayer offset={2} speed={2.5}>
           {" "}
           <LogoSlider />
         </ParallaxLayer>
