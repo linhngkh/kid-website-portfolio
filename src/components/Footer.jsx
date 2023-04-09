@@ -29,7 +29,8 @@ const Footer = () => {
           alignItems: "center",
           flexDirection: "column",
           justifyContent: "space-between",
-          padding: "10px",
+          paddingBottom: "10px",
+          paddingTop: "10px",
           bgcolor: "#B0E0E6",
         }}
       >

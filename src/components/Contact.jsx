@@ -13,83 +13,81 @@ import Image from "../assets/IMG_0991.jpeg";
 
 const Contact = () => {
   return (
-    <React.Fragment>
-      <Container maxWidth="lg" sx={{ paddingBottom: "60px" }}>
+    <Container maxWidth="lg" sx={{ paddingBottom: "60px" }}>
+      <Box
+        sx={{
+          bgcolor: "#fcfacf",
+          height: "80vh",
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <Box
           sx={{
-            bgcolor: "#fcfacf",
-            height: "80vh",
+            maxWidth: 345,
             width: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
           }}
         >
-          <Box
+          <CardMedia
+            component="img"
+            height="500px"
+            image={Image}
+            alt="xuka"
             sx={{
-              maxWidth: 345,
-              width: "100%",
-            }}
-          >
-            <CardMedia
-              component="img"
-              height="500px"
-              image={Image}
-              alt="xuka"
-              sx={{
-                borderTopLeftRadius: "12px",
-                borderBottomLeftRadius: "12px",
-                boxShadow: 3,
-              }}
-            />
-          </Box>
-          <Box
-            sx={{
-              maxWidth: 345,
-              width: "100%",
-              height: "500px",
-              background: "white",
-              borderTopRightRadius: "12px",
-              borderBottomRightRadius: "12px",
-              display: "flex",
-              alignItems: "center",
-              textAlign: "center",
-              justifyContent: "center",
+              borderTopLeftRadius: "12px",
+              borderBottomLeftRadius: "12px",
               boxShadow: 3,
             }}
-          >
-            <CardContent sx={{}}>
-              <Typography gutterBottom variant="h5" component="div">
-                Kết Nối với Xuka nhé!
-              </Typography>
-              <FormControl>
-                <TextField required placeholder="Họ và tên" />
-                <TextField
-                  required
-                  placeholder="Địa chỉ email"
-                  sx={{ mt: "10px" }}
-                />
-                <Textarea
-                  placeholder="Viết tin nhắn cho Xuka..."
-                  sx={{ mt: "10px" }}
-                  minRows={3}
-                />
-                <Button
-                  variant="contained"
-                  sx={{
-                    mt: "10px",
-                    background: "black",
-                    "&:hover": { background: "#35363a" },
-                  }}
-                >
-                  Gửi
-                </Button>
-              </FormControl>
-            </CardContent>
-          </Box>
+          />
         </Box>
-      </Container>
-    </React.Fragment>
+        <Box
+          sx={{
+            maxWidth: 345,
+            width: "100%",
+            height: "500px",
+            background: "white",
+            borderTopRightRadius: "12px",
+            borderBottomRightRadius: "12px",
+            display: "flex",
+            alignItems: "center",
+            textAlign: "center",
+            justifyContent: "center",
+            boxShadow: 3,
+          }}
+        >
+          <CardContent sx={{}}>
+            <Typography gutterBottom variant="h5" component="div">
+              Kết Nối với Xuka nhé!
+            </Typography>
+            <FormControl>
+              <TextField required placeholder="Họ và tên" />
+              <TextField
+                required
+                placeholder="Địa chỉ email"
+                sx={{ mt: "10px" }}
+              />
+              <Textarea
+                placeholder="Viết tin nhắn cho Xuka..."
+                sx={{ mt: "10px" }}
+                minRows={3}
+              />
+              <Button
+                variant="contained"
+                sx={{
+                  mt: "10px",
+                  background: "black",
+                  "&:hover": { background: "#35363a" },
+                }}
+              >
+                Gửi
+              </Button>
+            </FormControl>
+          </CardContent>
+        </Box>
+      </Box>
+    </Container>
   );
 };
 
