@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import CarouselSlider from "./CarouselSlider";
 import Profile from "./Profile";
 import Contact from "./Contact";
@@ -7,31 +7,22 @@ import ParallaxText from "./ParallaxText";
 
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 const Home = () => {
-  const parallax = useRef();
   return (
-    <div style={{ width: "100%", height: "100%" }}>
-      <Parallax pages={5} style={{}} ref={parallax}>
-        <ParallaxLayer
-          offset={0.2}
-          speed={2.5}
-          onClick={() => ref.current.scrollTo(3)}
-        >
+    <div style={{}}>
+      <Parallax pages={4} style={{}}>
+        <ParallaxLayer offset={0} speed={1.5} factor={1}>
           <CarouselSlider />
         </ParallaxLayer>
-        <ParallaxLayer
-          offset={2.3}
-          speed={1.5}
-          onClick={() => ref.current.scrollTo(0)}
-        >
+        <ParallaxLayer offset={0.8} speed={1.5} factor={0.5}>
           <Profile />
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={1}>
+        <ParallaxLayer offset={1} speed={1} factor={0.6}>
           <ParallaxText />
         </ParallaxLayer>
-        <ParallaxLayer offset={3} speed={0.5}>
+        <ParallaxLayer offset={1.2} speed={0.5} factor={0.9}>
           <Contact />
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={0.5}>
+        <ParallaxLayer offset={2} speed={0.5} factor={1}>
           {" "}
           <LogoSlider />
         </ParallaxLayer>

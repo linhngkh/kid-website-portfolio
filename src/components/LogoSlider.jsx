@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-import { CardMedia, Card, CardContent } from "@mui/material";
 import logo1 from "../assets/logoslider/logo-1.png";
 import logo2 from "../assets/logoslider/logo-2.png";
 import logo3 from "../assets/logoslider/logo-3.png";

@@ -10,7 +10,7 @@ import Wave from "react-wavify";
 const Footer = () => {
   const thisYear = new Date().getFullYear();
   return (
-    <div style={{}}>
+    <div style={{ position: "fixed", width: "100%", bottom: 0 }}>
       <Wave
         style={{ position: "relative", bottom: "-35px" }}
         fill="#B0E0E6"

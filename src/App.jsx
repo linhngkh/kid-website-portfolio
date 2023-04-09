@@ -32,13 +32,13 @@ function App() {
 
 const Root = () => {
   return (
-    <>
+    <div style={{}}>
       <Navbar />
       <div>
         <Outlet />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
