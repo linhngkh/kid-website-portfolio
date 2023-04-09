@@ -6,7 +6,7 @@ import { Typography } from "@mui/material";
 
 import Video from "../assets/video/xuka-shortvideo.mp4";
 
-export default function SimpleContainer() {
+export default function Profile() {
   return (
     <React.Fragment>
       <CssBaseline />
@@ -32,7 +32,7 @@ export default function SimpleContainer() {
                   "linear-gradient(180deg, transparent 60%, rgb(255, 253, 160) 60%)",
               }}
             >
-              Giới thiệu về bản thân
+            Profile-Giới thiệu về bản thân
             </mark>{" "}
           </Typography>
           <Typography padding={2} variant="body1">
