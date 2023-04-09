@@ -21,7 +21,7 @@ export default function Profile() {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        bgcolor: "#cfe8fc",
+        bgcolor: "#cffce2",
       }}
     >
       <Box
