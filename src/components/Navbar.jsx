@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 import { motion } from "framer-motion";
 
-import avatarXuka from "../assets/IMG_1906.jpeg";
+import avatarXuka from "../assets/logoslider/logo-3.png";
 
 const sideBars = ["Profile", "Images", "Blog"];
 
