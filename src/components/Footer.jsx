@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <>
       <Wave
-        style={{ position: "relative", bottom: "-30px" }}
-        fill="#89CFF0"
+        style={{ position: "relative", bottom: "-35px" }}
+        fill="#B0E0E6"
         paused={false}
         options={{
           height: 40,
@@ -29,7 +29,7 @@ const Footer = () => {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "10px",
-          bgcolor: "#89CFF0",
+          bgcolor: "#B0E0E6",
         }}
       >
         <Box

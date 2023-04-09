@@ -76,7 +76,11 @@ const Contact = () => {
                 />
                 <Button
                   variant="contained"
-                  sx={{ mt: "10px", background: "black" }}
+                  sx={{
+                    mt: "10px",
+                    background: "black",
+                    "&:hover": { background: "#35363a" },
+                  }}
                 >
                   Gửi
                 </Button>

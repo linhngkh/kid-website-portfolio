@@ -30,7 +30,7 @@ export default function Profile() {
           maxHeight: "100%",
         }}
       >
-        <Typography variant="h5">
+        <Typography variant="h5" marginX={9} paddingBottom={2}>
           <mark
             style={{
               background:
@@ -42,7 +42,7 @@ export default function Profile() {
         </Typography>
 
         <Grid container wrap="nowrap" spacing={2}>
-          <Typography padding={2} variant="body1">
+          <Typography padding={2} marginX={9} variant="body1" paragraph={true}>
             {message}
           </Typography>
         </Grid>
