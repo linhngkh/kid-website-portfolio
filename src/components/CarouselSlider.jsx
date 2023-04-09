@@ -60,8 +60,8 @@ const CarouselSlider = () => {
         className="mySwiper"
       >
         {/* all image sliders  */}
-        {imageSliders.map((item) => (
-          <SwiperSlide key={item.id}>
+        {imageSliders.map((item, index) => (
+          <SwiperSlide key={index}>
             <img src={item} alt="slide_image" />
           </SwiperSlide>
         ))}

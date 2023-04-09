@@ -6,10 +6,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Wave from "react-wavify";
+
 const Footer = () => {
   const thisYear = new Date().getFullYear();
   return (
-    <>
+    <div style={{}}>
       <Wave
         style={{ position: "relative", bottom: "-35px" }}
         fill="#B0E0E6"
@@ -91,7 +92,7 @@ const Footer = () => {
             </Link>
           </Box>
         </Box>
-        <Box sx={{ position: "sticky" }}>
+        <Box sx={{}}>
           <Typography variant="body2" sx={{ fontWeight: "bold" }}>
             &#169; {thisYear} Linh Nguyen - Write code with love!
             <Link
@@ -104,7 +105,7 @@ const Footer = () => {
           </Typography>
         </Box>
       </Container>
-    </>
+    </div>
   );
 };
 
