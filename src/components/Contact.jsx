@@ -18,11 +18,11 @@ const Contact = () => {
         <Box
           sx={{
             bgcolor: "#fcfacf",
-            height: "70vh",
+            height: "80vh",
             width: "100%",
             display: "flex",
             alignItems: "center",
-            justifyContent: "space-evenly",
+            justifyContent: "center",
           }}
         >
           <Box
@@ -33,12 +33,13 @@ const Contact = () => {
           >
             <CardMedia
               component="img"
-              height="500"
+              height="500px"
               image={Image}
               alt="xuka"
               sx={{
-                borderRadius: "12px",
-                boxShadow: 5,
+                borderTopLeftRadius: "12px",
+                borderBottomLeftRadius: "12px",
+                boxShadow: 3,
               }}
             />
           </Box>
@@ -48,7 +49,8 @@ const Contact = () => {
               width: "100%",
               height: "500px",
               background: "white",
-              borderRadius: "12px",
+              borderTopRightRadius: "12px",
+              borderBottomRightRadius: "12px",
               display: "flex",
               alignItems: "center",
               textAlign: "center",
