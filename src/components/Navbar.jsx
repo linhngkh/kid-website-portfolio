@@ -12,6 +12,8 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 
+import { motion } from "framer-motion";
+
 import avatarXuka from "../assets/IMG_1906.jpeg";
 
 const sideBars = ["Profile", "Images", "Blog"];
@@ -33,7 +35,16 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static">
+    <motion.div
+      position="static"
+      initial={{ opacity: 0, y: -180 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        ease: "easeInOut",
+        duration: 1,
+        delay: 0.6,
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -47,7 +58,7 @@ function Navbar() {
               fontFamily: "Lobster",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "black",
               textDecoration: "none",
             }}
           >
@@ -67,7 +78,7 @@ function Navbar() {
               fontFamily: "Lobster",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "black",
               textDecoration: "none",
             }}
           >
@@ -78,10 +89,16 @@ function Navbar() {
               <Button
                 key={sidebar}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{
+                  my: 2,
+                  color: "black",
+                  display: "block",
+                  mx: 2,
+                  fontWeight: 700,
+                }}
               >
                 <Link
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{ textDecoration: "none", color: "black" }}
                   to={`/${sidebar}`}
                 >
                   {sidebar}
@@ -91,7 +108,7 @@ function Navbar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open sidebar">
+            <Tooltip title="Nhấn vào avatar">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="xuka" src={avatarXuka} />
               </IconButton>
@@ -114,7 +131,10 @@ function Navbar() {
             >
               {sideBars.map((sidebar) => (
                 <MenuItem key={sidebar} onClick={handleCloseUserMenu}>
-                  <Link style={{ textDecoration: "none" }} to={`/${sidebar}`}>
+                  <Link
+                    style={{ textDecoration: "none", color: "black" }}
+                    to={`/${sidebar}`}
+                  >
                     {sidebar}
                   </Link>
                 </MenuItem>
@@ -123,7 +143,7 @@ function Navbar() {
           </Box>
         </Toolbar>
       </Container>
-    </AppBar>
+    </motion.div>
   );
 }
 export default Navbar;
