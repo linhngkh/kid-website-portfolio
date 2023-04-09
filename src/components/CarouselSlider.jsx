@@ -17,13 +17,30 @@ import slider_image_1 from "../assets/banner/banner-2.jpeg";
 import slider_image_2 from "../assets/banner/banner-1.jpeg";
 import slider_image_3 from "../assets/banner/banner-3.jpg";
 import slider_image_4 from "../assets/banner/banner-4.jpg";
+import slider_image_5 from "../assets/banner/banner-5.jpeg";
+import slider_image_6 from "../assets/banner/banner-6.jpeg";
+import slider_image_7 from "../assets/banner/banner-7.jpeg";
+import slider_image_8 from "../assets/banner/banner-8.jpeg";
+import slider_image_9 from "../assets/banner/banner-9.jpeg";
 
+const imageSliders = [
+  slider_image_3,
+  slider_image_2,
+  slider_image_6,
+  slider_image_7,
+  slider_image_1,
+  slider_image_4,
+  slider_image_5,
+  slider_image_8,
+  slider_image_9,
+];
 const CarouselSlider = () => {
   return (
     <Container
       sx={{
-        padding: "2rem 1rem",
         margin: "0 auto",
+        width: "70%",
+        paddingBottom: "10px",
       }}
     >
       <Swiper
@@ -43,18 +60,11 @@ const CarouselSlider = () => {
         className="mySwiper"
       >
         {/* all image sliders  */}
-        <SwiperSlide>
-          <img src={slider_image_1} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slider_image_2} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slider_image_3} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slider_image_4} alt="slide_image" />
-        </SwiperSlide>
+        {imageSliders.map((item) => (
+          <SwiperSlide key={item.id}>
+            <img src={item} alt="slide_image" />
+          </SwiperSlide>
+        ))}
         {/* slide controll with next and prev button */}
         <div className="slider-controller">
           <div className="swiper-button-prev slider-arrow">

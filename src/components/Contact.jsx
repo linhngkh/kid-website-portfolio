@@ -74,7 +74,10 @@ const Contact = () => {
                   sx={{ mt: "10px" }}
                   minRows={3}
                 />
-                <Button variant="contained" sx={{ mt: "10px" }}>
+                <Button
+                  variant="contained"
+                  sx={{ mt: "10px", background: "black" }}
+                >
                   Gửi
                 </Button>
               </FormControl>
