@@ -14,14 +14,31 @@ const Footer = () => {
       <Wave
         style={{
           position: "relative",
+          bottom: "-150px",
+          width: "100%",
+          height: "120px",
+          zIndex: "-99",
+        }}
+        fill="#7cebfc"
+        paused={false}
+        options={{
+          height: 70,
+          amplitude: 20,
+          speed: 0.45,
+          points: 3,
+        }}
+      />
+      <Wave
+        style={{
+          position: "relative",
           bottom: "-35px",
           width: "100%",
           height: "120px",
         }}
-        fill="#B0E0E6"
+        fill="#bef7ff"
         paused={false}
         options={{
-          height: 40,
+          height: 60,
           amplitude: 40,
           speed: 0.45,
           points: 3,
@@ -37,7 +54,7 @@ const Footer = () => {
           justifyContent: "space-between",
           paddingBottom: "10px",
           paddingTop: "10px",
-          bgcolor: "#B0E0E6",
+          bgcolor: "#bef7ff",
         }}
       >
         <Box
