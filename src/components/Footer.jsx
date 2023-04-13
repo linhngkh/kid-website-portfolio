@@ -94,7 +94,7 @@ const Footer = () => {
             </Box>
           </Box>
           {/* xuka info */}
-          <Box sx={{ width: "70%", ml: "100px" }}>
+          <Box sx={{ width: "70%", ml: "100px", whiteSpace: "nowrap" }}>
             <Typography
               variant="h6"
               sx={{ fontSize: { xs: "17px", md: "20px", lg: "25px" } }}
@@ -122,6 +122,7 @@ const Footer = () => {
             </Link>
           </Box>
         </Box>
+
         <Box sx={{}}>
           <Typography variant="body2" sx={{ fontWeight: "bold" }}>
             &#169; {thisYear} Linh Nguyen - Write code with love!
