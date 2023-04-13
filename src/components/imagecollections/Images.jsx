@@ -14,17 +14,17 @@ const Images = () => {
       <Box sx={{ flexGrow: 1 }}>
         <Typography variant="h4" sx={{ paddingBottom: "10px" }}>
           {" "}
-          Model Kid
+          Người Mẫu Nhí 🌼 Model Kid
         </Typography>
         <Model />
       </Box>
-      <Box sx={{ flexGrow: 1, paddingBottom: "90px" }}>
+      <Box sx={{ flexGrow: 1, paddingBottom: "20px" }}>
         <Typography
           variant="h4"
-          sx={{ paddingTop: "10px", paddingBottom: "10px" }}
+          sx={{ paddingTop: "40px", paddingBottom: "10px" }}
         >
           {" "}
-          Dancer
+          Vũ Công 🌼 Diễn Viên Múa 🌼 Dancer
         </Typography>
         <Dancer />
       </Box>
