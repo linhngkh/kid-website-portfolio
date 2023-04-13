@@ -4,12 +4,7 @@ import Model from "./Model";
 import Dancer from "./Dancer";
 const Images = () => {
   return (
-    <Container
-      sx={{
-        display: { xs: "block", md: "flex" },
-        alignItems: "center",
-      }}
-    >
+    <Container>
       <Box sx={{ flexGrow: 1 }}>
         <Typography variant="h4" sx={{ paddingBottom: "10px" }}>
           {" "}
