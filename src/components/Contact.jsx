@@ -9,14 +9,14 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Textarea from "@mui/joy/Textarea";
 
-import Image from "../assets/IMG_0991.jpeg";
+import Image from "../assets/IMG_3450.jpeg";
 
 const Contact = () => {
   return (
     <Container maxWidth="lg" sx={{ paddingBottom: "60px" }}>
       <Box
         sx={{
-          bgcolor: "#fcfacf",
+          bgcolor: "#fcfbcf",
           height: "80vh",
           width: "100%",
           display: "flex",

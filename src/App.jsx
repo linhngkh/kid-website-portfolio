@@ -8,7 +8,7 @@ import {
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
-import Images from "./components/Images";
+import Images from "./components/imagecollections/Images";
 import Footer from "./components/Footer";
 import Blog from "./components/Blog";
 function App() {

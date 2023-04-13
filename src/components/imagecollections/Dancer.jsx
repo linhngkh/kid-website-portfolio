@@ -1,16 +1,15 @@
 import React from "react";
 import { ImageList, ImageListItem } from "@mui/material";
 
-import image1 from "../assets/3G1A1424.jpeg";
-import image2 from "../assets/3G1A1426.jpeg";
-const Images = () => {
-  const itemData = [image1, image2];
+import image1 from "../../assets/dancer/IMG_1339.jpeg";
 
+const Dancer = () => {
+  const itemData = [image1];
   return (
     <ImageList
-      sx={{ width: 500, height: 450, padding: "50px" }}
-      variant="woven"
-      cols={2}
+      sx={{ width: 1000, height: 1000 }}
+      variant="masonry"
+      cols={4}
       gap={10}
     >
       {itemData.map((item, index) => (
@@ -27,4 +26,4 @@ const Images = () => {
   );
 };
 
-export default Images;
+export default Dancer;
