@@ -18,6 +18,8 @@ This is the front-end website portfolio project for a client.
 * Netlify
 
 ### App functionality overview:
+![xuka-web](https://user-images.githubusercontent.com/44481142/231701439-f4a15cb5-2707-4a33-87b8-fd5530e45ad2.png)
+
 - This project is made to focus on the art of modern UI website components, with elegant MUI lib under the hoot and other animation components: 
     * Carousel Images
     * Image Loop Marquee        
