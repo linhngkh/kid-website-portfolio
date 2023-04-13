@@ -32,8 +32,8 @@ const Dancer = () => {
   return (
     <ImageList
       sx={{ width: 1000, height: 1000 }}
-      variant="masonry"
-      cols={4}
+      variant="quilted"
+      cols={3}
       gap={7}
     >
       {itemData.map((item, index) => (

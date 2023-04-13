@@ -42,7 +42,7 @@ const Footer = () => {
       >
         <Box
           sx={{
-            height: "120px",
+            height: "80px",
             display: "flex",
             marginTop: "13px",
           }}
@@ -94,7 +94,7 @@ const Footer = () => {
             </Box>
           </Box>
           {/* xuka info */}
-          <Box sx={{ width: "60%", ml: "100px" }}>
+          <Box sx={{ width: "70%", ml: "100px" }}>
             <Typography
               variant="h6"
               sx={{ fontSize: { xs: "17px", md: "20px", lg: "25px" } }}
@@ -130,7 +130,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GitHubIcon style={{ color: "black" }} />
+              <GitHubIcon style={{ color: "black", verticalAlign: "middle" }} />
             </Link>
           </Typography>
         </Box>
