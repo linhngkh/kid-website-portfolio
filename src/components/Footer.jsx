@@ -12,7 +12,12 @@ const Footer = () => {
   return (
     <div style={{ position: "fixed", width: "100%", bottom: 0 }}>
       <Wave
-        style={{ position: "relative", bottom: "-35px" }}
+        style={{
+          position: "relative",
+          bottom: "-35px",
+          width: "100%",
+          height: "120px",
+        }}
         fill="#B0E0E6"
         paused={false}
         options={{
@@ -25,6 +30,7 @@ const Footer = () => {
       <Container
         maxWidth="2xl"
         sx={{
+          // display: { xs: "inline-block", md: "flex" },
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
@@ -36,14 +42,27 @@ const Footer = () => {
       >
         <Box
           sx={{
-            height: "17vh",
+            height: "120px",
             display: "flex",
-            marginTop: "10px",
+            marginTop: "13px",
           }}
         >
           {/* Nhu Hoa info */}
-          <Box sx={{ width: "50%", mr: "100px" }}>
-            <Typography variant="h6" sx={{ lineHeight: "1.5" }}>
+          <Box
+            sx={{
+              width: "70%",
+              gap: "20px",
+              display: "flex",
+              whiteSpace: "nowrap",
+            }}
+          >
+            <Typography
+              variant="h6"
+              sx={{
+                lineHeight: "1.2",
+                fontSize: { xs: "17px", md: "20px", lg: "25px" },
+              }}
+            >
               {" "}
               <mark
                 style={{
@@ -51,25 +70,35 @@ const Footer = () => {
                     "linear-gradient(180deg, transparent 60%, rgb(255, 253, 160) 60%)",
                 }}
               >
-                Booking Contact: Mẹ Trần Như Hoa
+                Booking Contact:
+                <br />
+                Mẹ Trần Như Hoa
               </mark>
             </Typography>
-            <Typography variant="body2">
-              {" "}
-              <PhoneCallbackIcon sx={{ verticalAlign: "middle" }} /> 0978 702552{" "}
-            </Typography>
-            <Link
-              href="https://www.facebook.com/hoa.an.9003"
-              sx={{ textDecoration: "none", color: "black" }}
-            >
-              {" "}
-              <FacebookIcon sx={{ verticalAlign: "middle" }} />
-              Hoa Su Kien
-            </Link>{" "}
+            <Box sx={{}}>
+              <Typography
+                variant="body2"
+                sx={{ fontSize: { xs: "17px", md: "20px" } }}
+              >
+                <PhoneCallbackIcon sx={{ verticalAlign: "middle" }} />{" "}
+                0978702552
+              </Typography>
+              <Link
+                href="https://www.facebook.com/hoa.an.9003"
+                sx={{ textDecoration: "none", color: "black" }}
+              >
+                {" "}
+                <FacebookIcon sx={{ verticalAlign: "middle" }} />
+                Hoa Su Kien
+              </Link>
+            </Box>
           </Box>
           {/* xuka info */}
           <Box sx={{ width: "60%", ml: "100px" }}>
-            <Typography variant="h6">
+            <Typography
+              variant="h6"
+              sx={{ fontSize: { xs: "17px", md: "20px", lg: "25px" } }}
+            >
               <mark
                 style={{
                   background:
