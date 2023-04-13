@@ -41,7 +41,12 @@ export default function Profile() {
           </mark>{" "}
         </Typography>
 
-        <Grid container wrap="nowrap" spacing={2}>
+        <Grid
+          container
+          wrap="nowrap"
+          spacing={2}
+          sx={{ display: { xs: "none", md: "flex" } }}
+        >
           <Typography padding={2} marginX={9} variant="body1" paragraph={true}>
             {message}
           </Typography>
