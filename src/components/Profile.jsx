@@ -54,7 +54,12 @@ export default function Profile() {
             boxShadow: "0 8px 8px -4px lightblue",
           }}
         >
-          <Typography variant="h5" marginX={7} padding={2}>
+          <Typography
+            variant="h5"
+            marginX={7}
+            padding={2}
+            sx={{ fontFamily: "Lobster" }}
+          >
             <mark
               style={{
                 background:

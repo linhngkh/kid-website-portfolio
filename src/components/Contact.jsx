@@ -57,8 +57,13 @@ const Contact = () => {
             boxShadow: "0 8px 8px -4px lightblue",
           }}
         >
-          <CardContent sx={{}}>
-            <Typography gutterBottom variant="h5" component="div">
+          <CardContent>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              sx={{ fontFamily: "Lobster" }}
+            >
               Kết Nối với Xuka nhé!
             </Typography>
             <FormControl>
