@@ -2,6 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { Typography, Grid } from "@mui/material";
+import { useTransform, useMotionValue, motion } from "framer-motion";
 
 import Video from "../assets/video/xuka-shortvideo.mp4";
 
@@ -14,51 +15,72 @@ const message = `Xin chào các bạn!
             dõi và yêu mến mình nhé!`;
 
 export default function Profile() {
+  // set initial state to track the state and velocity
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const rotateX = useTransform(y, [-100, 100], [30, -30]);
+  const rotateY = useTransform(x, [100, -100], [-30, 30]);
+
   return (
-    <Container
-      maxWidth="lg"
-      sx={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        bgcolor: "#cffce2",
-      }}
-    >
-      <Box
+    <div style={{ perspective: 2000 }}>
+      <motion.div
+        style={{ x, y, rotateX, rotateY, z: 100 }}
+        drag
+        dragElastic={0.18}
+        dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+        whileTap={{ cursor: "grabbing" }}
+        maxWidth="lg"
         sx={{
-          maxWidth: "100%",
-          maxHeight: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
         }}
       >
-        <Typography variant="h5" marginX={9} paddingBottom={2}>
-          <mark
-            style={{
-              background:
-                "linear-gradient(180deg, transparent 60%, rgb(255, 253, 160) 60%)",
-            }}
-          >
-            Profile-Giới thiệu về bản thân
-          </mark>{" "}
-        </Typography>
-
-        <Grid
-          container
-          wrap="nowrap"
-          spacing={2}
-          sx={{ display: { xs: "none", md: "flex" } }}
+        <Box
+          sx={{
+            maxWidth: "100%",
+            maxHeight: "100%",
+            backgroundColor: "#cffce2",
+          }}
         >
-          <Typography padding={2} marginX={9} variant="body1" paragraph={true}>
-            {message}
+          <Typography variant="h5" marginX={9} paddingBottom={2}>
+            <mark
+              style={{
+                background:
+                  "linear-gradient(180deg, transparent 60%, rgb(255, 253, 160) 60%)",
+              }}
+            >
+              Profile Về Mình
+            </mark>{" "}
           </Typography>
-        </Grid>
-      </Box>
 
-      <Box sx={{ display: "flex", mr: "-24px" }}>
-        <video controls width="300" autoPlay loop muted>
-          {" "}
-          <source src={Video} type="video/mp4" />
-        </video>
-      </Box>
-    </Container>
+          <Grid
+            container
+            wrap="nowrap"
+            spacing={2}
+            sx={{ display: { xs: "none", md: "flex" } }}
+          >
+            <Typography
+              padding={2}
+              marginX={9}
+              variant="body1"
+              paragraph={true}
+            >
+              {message}
+            </Typography>
+          </Grid>
+        </Box>
+
+        <motion.div style={{ x, y, rotateX, rotateY, z: 10000 }}>
+          <Box sx={{ display: "flex", mr: "-24px" }}>
+            <video controls width="300" autoPlay loop muted>
+              {" "}
+              <source src={Video} type="video/mp4" />
+            </video>
+          </Box>
+        </motion.div>
+      </motion.div>
+    </div>
   );
 }
