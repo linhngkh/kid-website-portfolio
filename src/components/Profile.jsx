@@ -94,7 +94,7 @@ export default function Profile() {
               width: "400px",
               border: "4px solid #fff",
               borderRadius: "30px",
-              background: "#eee",
+              background: "#757575",
               boxShadow: "0 8px 8px -4px lightblue",
             }}
           >
