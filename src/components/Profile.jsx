@@ -21,7 +21,7 @@ export default function Profile() {
   const rotateY = useTransform(x, [100, -100], [-30, 30]);
 
   return (
-    <div style={{ perspective: 2000 }}>
+    <section id="profile" style={{ perspective: 2000 }}>
       <motion.div
         style={{
           x,
@@ -49,8 +49,8 @@ export default function Profile() {
             backgroundColor: "#cffce2",
             border: "4px solid #fff",
             borderRadius: "30px",
-            top: "70px",
-            right: "-300px",
+            top: "200px",
+            right: "-200px",
             boxShadow: "0 8px 8px -4px lightblue",
           }}
         >
@@ -98,13 +98,14 @@ export default function Profile() {
 
         <motion.div style={{ x, y, rotateX, rotateY, z: 10000 }}>
           <div
+            id="video"
             style={{
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               position: "absolute",
-              top: "-150px",
-              right: "300px",
+              top: "-50px",
+              right: "200px",
               width: "400px",
               border: "4px solid #fff",
               borderRadius: "30px",
@@ -119,6 +120,6 @@ export default function Profile() {
           </div>
         </motion.div>
       </motion.div>
-    </div>
+    </section>
   );
 }

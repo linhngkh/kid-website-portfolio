@@ -39,3 +39,17 @@ img {
   display: block;
   margin-right: 30px;
 }
+.section #profile {
+  @media and (max-width: 600px) {
+    display: "block";
+    width: "500px";
+    background-color: "red";
+  }
+}
+#video {
+  @media and (max-width: 600px) {
+    display: "block";
+    background-color: "red";
+    width: "300px";
+  }
+}
