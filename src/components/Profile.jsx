@@ -1,6 +1,4 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import { Typography, Grid } from "@mui/material";
 import { useTransform, useMotionValue, motion } from "framer-motion";
 
@@ -25,23 +23,32 @@ export default function Profile() {
   return (
     <div style={{ perspective: 2000 }}>
       <motion.div
-        style={{ x, y, rotateX, rotateY, z: 100 }}
+        style={{
+          x,
+          y,
+          rotateX,
+          rotateY,
+          z: 100,
+          position: "relative",
+          cursor: "grab",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
         drag
         dragElastic={0.18}
         dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
         whileTap={{ cursor: "grabbing" }}
         maxWidth="lg"
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
       >
-        <Box
-          sx={{
-            maxWidth: "100%",
+        <div
+          style={{
+            position: "relative",
+            maxWidth: "620px",
             maxHeight: "100%",
             backgroundColor: "#cffce2",
+            border: "4px solid #fff",
+            borderRadius: "30px",
           }}
         >
           <Typography variant="h5" marginX={9} paddingBottom={2}>
@@ -70,15 +77,25 @@ export default function Profile() {
               {message}
             </Typography>
           </Grid>
-        </Box>
+        </div>
 
         <motion.div style={{ x, y, rotateX, rotateY, z: 10000 }}>
-          <Box sx={{ display: "flex", mr: "-24px" }}>
-            <video controls width="300" autoPlay loop muted>
+          <div
+            style={{
+              display: "flex",
+              mr: "-24px",
+              position: "absolute",
+              top: "-200px",
+              right: "400px",
+              border: "4px solid #fff",
+              borderRadius: "30px",
+            }}
+          >
+            <video controls width="350" autoPlay loop muted>
               {" "}
               <source src={Video} type="video/mp4" />
             </video>
-          </Box>
+          </div>
         </motion.div>
       </motion.div>
     </div>
