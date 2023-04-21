@@ -38,9 +38,10 @@ const CarouselSlider = () => {
   return (
     <Container
       sx={{
-        margin: "0 auto",
+        margin: "20px auto",
         width: "1000px",
         paddingBottom: "10px",
+        boxShadow: "0 8px 8px -4px gray",
       }}
     >
       <Swiper

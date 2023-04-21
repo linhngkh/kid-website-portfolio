@@ -49,9 +49,12 @@ export default function Profile() {
             backgroundColor: "#cffce2",
             border: "4px solid #fff",
             borderRadius: "30px",
+            top: "70px",
+            right: "-300px",
+            boxShadow: "0 8px 8px -4px lightblue",
           }}
         >
-          <Typography variant="h5" marginX={9} paddingBottom={2}>
+          <Typography variant="h5" marginX={7} padding={2}>
             <mark
               style={{
                 background:
@@ -83,12 +86,16 @@ export default function Profile() {
           <div
             style={{
               display: "flex",
-              mr: "-24px",
+              alignItems: "center",
+              justifyContent: "center",
               position: "absolute",
-              top: "-200px",
-              right: "400px",
+              top: "-150px",
+              right: "300px",
+              width: "400px",
               border: "4px solid #fff",
               borderRadius: "30px",
+              background: "#eee",
+              boxShadow: "0 8px 8px -4px lightblue",
             }}
           >
             <video controls width="350" autoPlay loop muted>

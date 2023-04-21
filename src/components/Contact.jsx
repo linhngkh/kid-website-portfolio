@@ -16,7 +16,7 @@ const Contact = () => {
     <Container maxWidth="lg" sx={{ paddingBottom: "60px" }}>
       <Box
         sx={{
-          bgcolor: "#fcfbcf",
+          // bgcolor: "#fcfbcf",
           height: "80vh",
           width: "100%",
           display: "flex",
@@ -54,7 +54,7 @@ const Contact = () => {
             alignItems: "center",
             textAlign: "center",
             justifyContent: "center",
-            boxShadow: 3,
+            boxShadow: "0 8px 8px -4px lightblue",
           }}
         >
           <CardContent sx={{}}>
