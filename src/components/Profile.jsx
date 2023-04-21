@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Typography, Grid, Tooltip, Button } from "@mui/material";
 import { useTransform, useMotionValue, motion } from "framer-motion";
-import AssistantIcon from "@mui/icons-material/Assistant";
+import BackHandIcon from "@mui/icons-material/BackHand";
 import Video from "../assets/video/xuka-shortvideo.mp4";
 
 const message = `Xin chào các bạn!
@@ -68,13 +68,14 @@ export default function Profile() {
             >
               Profile Về Mình
             </mark>{" "}
+            {/* tooltip */}
             <Tooltip
               title="This 3D profile section can be grabbed!"
               placement="top"
               style={{ color: "black" }}
             >
               <Button>
-                <AssistantIcon />
+                <BackHandIcon />
               </Button>
             </Tooltip>
           </Typography>
