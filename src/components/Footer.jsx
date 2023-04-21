@@ -47,7 +47,6 @@ const Footer = () => {
       <Container
         maxWidth="2xl"
         sx={{
-          // display: { xs: "inline-block", md: "flex" },
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
@@ -76,6 +75,7 @@ const Footer = () => {
             <Typography
               variant="h6"
               sx={{
+                fontFamily: "Lobster",
                 lineHeight: "1.2",
                 fontSize: { xs: "17px", md: "20px", lg: "25px" },
               }}
@@ -92,7 +92,7 @@ const Footer = () => {
                 Mẹ Trần Như Hoa
               </mark>
             </Typography>
-            <Box sx={{}}>
+            <Box>
               <Typography
                 variant="body2"
                 sx={{ fontSize: { xs: "17px", md: "20px" } }}
@@ -118,6 +118,7 @@ const Footer = () => {
             >
               <mark
                 style={{
+                  fontFamily: "Lobster",
                   background:
                     "linear-gradient(180deg, transparent 60%, rgb(255, 253, 160) 60%)",
                 }}
