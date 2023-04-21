@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Box, Button, Paper } from "@mui/material";
+import { Container } from "@mui/material";
 // import Swiper JS
 import { Swiper, SwiperSlide } from "swiper/react";
 // import Swiper styles
@@ -39,7 +39,7 @@ const CarouselSlider = () => {
     <Container
       sx={{
         margin: "0 auto",
-        width: "70%",
+        width: "1000px",
         paddingBottom: "10px",
       }}
     >
