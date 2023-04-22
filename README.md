@@ -22,7 +22,8 @@ This is the front-end website portfolio project for a client.
 
 - This project is made to focus on the art of modern UI website components, with elegant MUI lib under the hoot and other animation components: 
     * Carousel Images
-    * Image Loop Marquee        
+    * Image Loop Marquee
+    * 3D Card     
 ### Demo Link 
 [Click to see](https://xuka-thuyan.netlify.app/)
 ### Video Demo (click the video below to play)
